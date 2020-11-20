@@ -1,10 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 
-export default function AboutScreen() {
+export default function AboutScreen({navigation: {navigate}}) {
   return (
     <View style={styles.about}>
       <Text>About Screen</Text>
+      <Button title="Go to Map Page" onPress={() => navigate('Map')} />
     </View>
   );
 }

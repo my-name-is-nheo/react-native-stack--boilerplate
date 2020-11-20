@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './screens/Homescreen.js';
 import AboutScreen from './screens/AboutScreen.js';
-
+import MapScreen from './screens/MapScreen.js';
 const Stack = createStackNavigator();
 
 export default class App extends React.Component {
@@ -22,6 +22,13 @@ export default class App extends React.Component {
           <Stack.Screen
             name="About"
             component={AboutScreen}
+            options={{
+              gestureEnabled: true,
+            }}
+          />
+          <Stack.Screen
+            name="Map"
+            component={MapScreen}
             options={{
               gestureEnabled: true,
             }}

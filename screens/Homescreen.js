@@ -11,7 +11,7 @@ injected into your component.
     return (
       <View style={styles.home}>
         <Text>Home Screen</Text>
-        <Button title="Go About Page" onPress={() => navigate('About')} />
+        <Button title="Go to About Page" onPress={() => navigate('About')} />
       </View>
     );
   }
