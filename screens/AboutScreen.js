@@ -7,6 +7,10 @@ export default function AboutScreen({navigation: {navigate}}) {
       <Text>About Screen</Text>
       <Button title="Go to Map Page" onPress={() => navigate('Map')} />
       <Button title="Go to Camera Page" onPress={() => navigate('Camera')} />
+      <Button
+        title="Go to AsyncStorage Page"
+        onPress={() => navigate('Async')}
+      />
     </View>
   );
 }

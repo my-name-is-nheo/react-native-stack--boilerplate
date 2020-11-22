@@ -6,6 +6,7 @@ import HomeScreen from './screens/Homescreen.js';
 import AboutScreen from './screens/AboutScreen.js';
 import MapScreen from './screens/MapScreen.js';
 import CameraScreen from './screens/CameraScreen.js';
+import AsyncScreen from './screens/AsyncScreen.js';
 const Stack = createStackNavigator();
 
 export default class App extends React.Component {
@@ -37,6 +38,13 @@ export default class App extends React.Component {
           <Stack.Screen
             name="Camera"
             component={CameraScreen}
+            options={{
+              gestureEnabled: true,
+            }}
+          />
+          <Stack.Screen
+            name="Async"
+            component={AsyncScreen}
             options={{
               gestureEnabled: true,
             }}
