@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './screens/Homescreen.js';
 import AboutScreen from './screens/AboutScreen.js';
 import MapScreen from './screens/MapScreen.js';
+import CameraScreen from './screens/CameraScreen.js';
 const Stack = createStackNavigator();
 
 export default class App extends React.Component {
@@ -29,6 +30,13 @@ export default class App extends React.Component {
           <Stack.Screen
             name="Map"
             component={MapScreen}
+            options={{
+              gestureEnabled: true,
+            }}
+          />
+          <Stack.Screen
+            name="Camera"
+            component={CameraScreen}
             options={{
               gestureEnabled: true,
             }}

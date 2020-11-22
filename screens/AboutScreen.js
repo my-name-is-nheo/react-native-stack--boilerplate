@@ -6,6 +6,7 @@ export default function AboutScreen({navigation: {navigate}}) {
     <View style={styles.about}>
       <Text>About Screen</Text>
       <Button title="Go to Map Page" onPress={() => navigate('Map')} />
+      <Button title="Go to Camera Page" onPress={() => navigate('Camera')} />
     </View>
   );
 }
